@@ -1,0 +1,14 @@
+<div class="login">
+  <form [formGroup]="form" class="custom-form" (submit)="enviar()">
+    <h1>Inicia</h1>
+      <div ngClass="group-input">
+          <input placeholder="email" name="email" id="usuario" formControlName="email" />
+      </div>
+      <div ngClass="group-input">
+          <input placeholder="password"  name="password" id="password" type="password" formControlName="password" />
+      </div>
+      <button type="submit">Entrar</button>
+  </form>
+
+</div>
+

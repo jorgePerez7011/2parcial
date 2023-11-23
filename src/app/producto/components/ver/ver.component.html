@@ -1,0 +1,20 @@
+<div id="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title">{{product.title}}</h5>
+        <i (click)="close()" class="bi bi-x-square fs-3 text-danger"></i>
+      </div>
+      <div class="modal-con">
+        <div class="img">
+          <img [ngSrc]="product.images[0]" width="200" height="200" alt="">
+        </div>
+        <div class="descripcion">
+          <h4>Descripción</h4>
+          <p>{{product.description}}</p>
+          <h5>Valor: $ {{product.price}} </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

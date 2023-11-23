@@ -1,0 +1,23 @@
+
+<!--div ngClass="grid">
+
+    <ng-container *ngIf="elementos.length > 0 ; else vacio" >
+        <app-lista *ngFor="let p of elementos">
+            <div titulo>{{ p.title }}</div>
+            <div descripcion>{{ p.description }}</div>
+            <div precio>{{ p.price }}</div>
+            <div img><img [ngSrc]="p.images[0]" width="500" height="500"  /> </div>
+        </app-lista>
+    </ng-container>
+
+    <ng-template #vacio>esta vacio</ng-template>
+</div-->
+<div class="add float-end">
+  <button (click)="save()" class="btn btn-success"> Agregar <i class="bi bi-patch-plus"></i></button>
+</div>
+<div class="container-products">
+  <app-lista
+    *ngFor="let p of elementos"
+    [productData]="p">
+  </app-lista>
+</div>
