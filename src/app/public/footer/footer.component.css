@@ -1,8 +1,10 @@
 .main-footer {
-  background-color: #6ca779; /* Utilizando el mismo tono de verde fresco */
+  background-color: #6ca779;
   color: white;
   padding: 10px 0;
-  border-radius: 10px; /* Bordes más redondos */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-footer .container {
@@ -10,28 +12,39 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
-.footer-info, .social-links {
+.footer-info,
+.social-links {
   flex: 1;
 }
 
-.footer-info h3, .social-links h3 {
+.footer-info h3,
+.social-links h3 {
   margin-bottom: 5px;
-  color: white; 
+  color: white;
 }
 
 .social-links a {
   display: block;
   margin-bottom: 5px;
-  color: white; 
+  color: white;
   text-decoration: none;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
   text-decoration: underline;
-  color: #4a90e2; 
+  color: #4a90e2;
+}
+
+.whatsapp-btn {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 

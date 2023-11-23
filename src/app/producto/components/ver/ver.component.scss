@@ -1,32 +1,36 @@
-#modal {
-  .modal-header {
-    background-color: #EAECEE    !important;
-    text-align: center;
-    padding: 0.4cm;
-  }
+#modal .modal-header {
+  background-color: #EAECEE !important;
+  text-align: center;
+  padding: 0.4cm;
+  font-size: 24px; /* Aumentar el tamaño de la fuente del encabezado */
+}
 
-  .modal-con {
-    background-color: #f8f9fa;
-    color: black;
-    display: flex;
+#modal .modal-con {
+  background-color: #f8f9fa;
+  color: black;
+  display: flex;
+}
 
-    .img {
-      margin: 0.35cm;
-      img{
-        width: 200px;
-        height: 200px;
-        border-radius: 0.25rem;
-      }
-    }
+#modal .modal-con .img {
+  margin: 0.35cm;
+}
 
-    p, h4 {
-      text-align: left;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    h5{
-      margin-left: 10px;
-    }
-  }
+#modal .modal-con .img img {
+  width: 300px; /* Aumentar el ancho de la imagen */
+  height: 300px; /* Aumentar la altura de la imagen */
+  border-radius: 0.25rem;
+}
+
+#modal .modal-con p,
+#modal .modal-con h4 {
+  text-align: left;
+  margin-left: 20px; /* Aumentar el margen izquierdo */
+  margin-top: 20px; /* Aumentar el margen superior */
+  margin-bottom: 20px; /* Aumentar el margen inferior */
+  font-size: 20px; /* Aumentar el tamaño de la fuente de párrafos y encabezados */
+}
+
+#modal .modal-con h5 {
+  margin-left: 20px; /* Aumentar el margen izquierdo */
+  font-size: 22px; /* Aumentar el tamaño de la fuente de h5 */
 }

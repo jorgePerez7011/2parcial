@@ -1,18 +1,18 @@
 <div id="modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header" >
-        <h5 class="modal-title">{{product.title}}</h5>
-        <i (click)="close()" class="bi bi-x-square fs-3 text-danger"></i>
+      <div class="modal-header" style="font-size: 28px;">
+        <h5 class="modal-title">{{ product.title }}</h5>
+        <i (click)="close()" class="bi bi-x-square fs-4 text-danger"></i>
       </div>
       <div class="modal-con">
         <div class="img">
-          <img [ngSrc]="product.images[0]" width="200" height="200" alt="">
+          <img [src]="product.images[0]" style="width: 400px; height: 400px;" alt="">
         </div>
         <div class="descripcion">
-          <h4>Descripción</h4>
-          <p>{{product.description}}</p>
-          <h5>Valor: $ {{product.price}} </h5>
+          <h4 style="font-size: 22px;">Descripción</h4>
+          <p style="font-size: 20px;">{{ product.description }}</p>
+          <h5 style="font-size: 24px;">Valor: $ {{ product.price }} </h5>
         </div>
       </div>
     </div>

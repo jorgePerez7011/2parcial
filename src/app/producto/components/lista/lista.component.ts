@@ -23,13 +23,14 @@ export class ListaComponent {
 
   delete(id:any){
     Swal.fire({
-      title: '¿Estás seguro de borrar este articulo?',
+      title: '¿quieres borrarlo?',
       text: '¡Esto no se puede deshacer!',
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Sí, bórralo'
+      confirmButtonColor: '#87CEEB',
+      cancelButtonColor: '	#FF0000',
+      confirmButtonText: 'Sí',
+      
     }).then((result) => {
       if (result.isConfirmed) {
         this.service.deleteProducto(id).subscribe(
@@ -37,17 +38,17 @@ export class ListaComponent {
             this.product.ngOnInit();
             Swal.fire({
               position: 'top-end',
-              icon: 'warning',
+              icon: 'success',
               title: 'producto eliminado',
               showConfirmButton: false,
-              timer: 1500,
+              timer: 2500,
               toast: true,
               customClass: {
                 container: 'my-swal-container',
                 title: 'my-swal-title',
                 icon: 'my-swal-icon',
               },
-              background: '#FAD7A0',
+              background: '	#FFFF00',
               })
             }
         );

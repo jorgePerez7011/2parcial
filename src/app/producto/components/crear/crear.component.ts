@@ -28,7 +28,7 @@ export class CrearComponent {
       const data = {
         title: this.saveForm.get('title')?.value,
         price: this.saveForm.get('price')?.value,
-        description :this.saveForm.get('description')?.value,
+        description :this.saveForm.get('descripcion')?.value,
         categoryId : 2,
         images: [this.saveForm.get('image')?.value],
       }
